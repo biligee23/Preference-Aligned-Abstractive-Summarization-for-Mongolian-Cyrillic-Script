@@ -10,18 +10,18 @@ This research addresses the critical gap in Natural Language Processing (NLP) fo
 
 ---
 
-## 🛠 Proposed Methodology (Four-Module Architecture)
-The system adapts a multilingual foundation into a preference-aligned summarizer through a specialized pipeline:
+## 🛠 Methodology Framework
+The system adapts a multilingual foundation into a preference-aligned summarizer by integrating state-of-the-art NLP techniques into a specialized four-module pipeline:
 
 1.  **Module 1: Monolingual Adaptation (monT5)**
-    *   Reduced the mT5-Large vocabulary (250k tokens) to a specialized 40k Mongolian subset using **Vocabulary Pruning**.
+    *   Adaptation of mT5-Large via **Vocabulary Pruning** to mitigate Mongolian subword segmentation failures.
 2.  **Module 2: Three-Phased SFT Strategy**
-    *   Sequential fine-tuning of the encoder, decoder, and bias parameters to stabilize learning on synthetic and natural datasets.
+    *   A robust fine-tuning procedure to stabilize the model on translated and natural Mongolian news data.
 3.  **Module 3: Semantic Reward Modeling**
-    *   Developed a **Semantic Judge** based on Sentence-BERT (SBERT) using Cross-lingual Knowledge Distillation and Triplet Loss optimization.
-4.  **Module 4: Reinforcement Token Optimization (RTO)**
-    *   A hybrid alignment algorithm combining token-wise dense signals (DPO-based) and sentence-wise sparse signals to identify and correct morphological errors.
-
+    *   Development of a **Semantic Judge** (Reward Model) using Cross-lingual Knowledge Distillation and Triplet Loss to detect factual hallucinations.
+4.  **Module 4: Preference-Based Alignment (RTO)**
+    *   Implementation of the **Reinforced Token Optimization (RTO)** algorithm (Zhong et al., 2024) to align the model with native writing conventions. This is the first known application of token-wise preference optimization for the Mongolian Cyrillic script.
+    *   
 <img src="assets/overview" alt="System Architecture Overview" width="500">   
 ---
 

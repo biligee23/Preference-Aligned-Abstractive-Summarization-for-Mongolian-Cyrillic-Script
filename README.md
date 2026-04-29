@@ -21,7 +21,7 @@ The system adapts a multilingual foundation into a preference-aligned summarizer
     *   Development of a **Semantic Judge** (Reward Model) using Cross-lingual Knowledge Distillation and Triplet Loss to detect factual hallucinations.
 4.  **Module 4: Preference-Based Alignment (RTO)**
     *   Implementation of the **Reinforced Token Optimization (RTO)** algorithm (Zhong et al., 2024) to align the model with native writing conventions. This is the first known application of token-wise preference optimization for the Mongolian Cyrillic script.
-    *   
+      
 <img src="assets/overview" alt="System Architecture Overview" width="500">   
 ---
 

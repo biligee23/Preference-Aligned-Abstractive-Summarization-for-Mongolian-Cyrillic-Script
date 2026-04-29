@@ -22,8 +22,7 @@ The system adapts a multilingual foundation into a preference-aligned summarizer
 4.  **Module 4: Reinforcement Token Optimization (RTO)**
     *   A hybrid alignment algorithm combining token-wise dense signals (DPO-based) and sentence-wise sparse signals to identify and correct morphological errors.
 
-![System Architecture Overview](assets/overview)
-
+<img src="assets/overview" alt="System Architecture Overview" width="500">   
 ---
 
 ## 📊 Key Results
